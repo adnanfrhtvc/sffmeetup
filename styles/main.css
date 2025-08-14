@@ -1,0 +1,69 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.search-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.suggestions-container {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: white;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+.status-badge {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.history-item {
+    border-left: 4px solid #0d6efd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.checked-in {
+    border-left-color: #198754;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .form-control-lg {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .history-item {
+        font-size: 0.9rem;
+    }
+}

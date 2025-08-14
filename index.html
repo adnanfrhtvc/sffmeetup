@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHFF Sarajevo Meetup Check-In</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h1>BHFF Sarajevo Meetup</h1>
+            <p class="lead">Guest Check-In System</p>
+        </div>
+        
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="search-container">
+                    <label for="searchInput" class="form-label">Search Attendees</label>
+                    <input type="text" id="searchInput" class="form-control form-control-lg" 
+                           placeholder="Start typing name..." autocomplete="off">
+                    <div id="suggestionsContainer" class="suggestions-container"></div>
+                </div>
+                
+                <div id="resultContainer" class="text-center p-4 d-none">
+                    <h2 id="attendeeName" class="mb-3"></h2>
+                    <div id="statusBadge" class="status-badge d-inline-block mb-3"></div>
+                    <p id="actionMessage"></p>
+                    <button id="backButton" class="btn btn-outline-primary mt-2">Back to Search</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card shadow-sm">
+            <div class="card-header bg-white">
+                <h5 class="mb-0">Check-in History</h5>
+            </div>
+            <div class="card-body">
+                <div id="historyContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
